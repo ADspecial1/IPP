@@ -4,6 +4,7 @@ import StatusTracker from "../components/StatusTracker";
 import TaskList from "../components/TaskList";
 import AlertsPanel from "../components/AlertsPanel";
 import DocumentUpload from "../components/DocumentUpload";
+import SupportTickets from "../components/SupportTickets";
 
 const dataByRole = {
   Applicant: {
@@ -48,6 +49,7 @@ export default function Dashboard({ role, setRole }) {
       <AlertsPanel alerts={data.alerts} />
       <TaskList tasks={data.tasks} />
       <DocumentUpload />
+      <SupportTickets/>
     </DashboardLayout>
   );
 }
